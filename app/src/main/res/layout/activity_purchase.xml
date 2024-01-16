@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F4"
+    tools:context=".purchase">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        android:id="@+id/AddItemLayout"
+        android:layout_alignParentTop="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/listview"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="200dp" />
+
+        <EditText
+            android:id="@+id/individualweight"
+            android:layout_width="224dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:hint="Enter Weight to add"
+            android:textColorHint="#373636"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginBottom="103dp"
+           android:inputType="text"
+
+            ></EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="114dp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/lyouut"
+            android:text="ADD"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/makeBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="28dp"
+           android:textColorHint="@color/black"
+            android:background="@drawable/lyouut"
+
+            android:hint="SUBMIT"></androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/NamePriceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/productname"
+            android:layout_width="377dp"
+            android:layout_height="57dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="ENTER PRODUCT NAME"
+            android:inputType="text"
+            android:textColorHint="#333232"></EditText>
+
+        <EditText
+            android:id="@+id/productrate"
+            android:layout_width="380dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/productname"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="FIX PURCHASE RATE (IN KG)"
+            android:inputType="text"
+            android:textColorHint="#333232"></EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addbtn"
+            android:layout_width="116dp"
+            android:layout_height="71dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/productrate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lyouut"
+            android:text="ADD ITEMS" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:visibility="gone"
+        android:id="@+id/homelayout"
+
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_v"
+            android:layout_centerInParent="true"
+
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="110dp"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/lyouut"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:id="@+id/homeBtn"
+            android:layout_marginBottom="50dp"
+            android:text="Home"></androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

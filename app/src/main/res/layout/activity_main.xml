@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F4"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/lyouut"></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:id="@+id/costpricetemp"
+        android:text="Total Cost Price"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="70dp"
+        android:text="Total Selling Price"
+        android:textColor="@color/black"
+
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/costprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="94dp"
+        android:text="₹ 0.0"
+        android:textColor="#08600C"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sellingprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="94dp"
+
+        android:text="₹ 0.0"
+        android:textColor="#D10808"
+        android:textSize="15sp"></TextView>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+
+
+        android:background="#051360"></View>
+
+    <ImageView
+        android:id="@+id/nullimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:src="@drawable/error"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO TRANSATIONS"
+        android:id="@+id/notransation"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textColor="#122AB3"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        ></TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_alignParentTop="true"
+       android:visibility="gone"
+        android:layout_marginTop="146dp"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_customer"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/layout_btn"
+        android:text="Add Customer"
+        android:textColor="#EDDA35"
+        android:textStyle="bold"
+
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allCustomer"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/layout_btn"
+        android:text="Transactions"
+        android:textColor="#EDDA35"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:contentDescription="buttontodate"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#F1F2F4"
+        android:src="@drawable/baseline_date_range_24"></ImageButton>
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh"
+        android:contentDescription="buttontodate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#F1F2F4"
+        android:src="@drawable/baseline_refresh_24"></ImageButton>
+
+</RelativeLayout>
